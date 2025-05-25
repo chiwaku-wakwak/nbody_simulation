@@ -31,8 +31,8 @@ def update(frame):
     return sc, time_text
 
 ani = FuncAnimation(fig, update, frames=len(selected_indices), interval=100, blit=True)
-ani.save('three_body.mp4', writer='ffmpeg', fps=10)
+ani.save('three_body.gif', writer='ffmpeg', fps=10)
 
-print("保存完了：three_body.mp4")
+print("保存完了：three_body.gif")
 
 # plt.show() 注: ani.save は ffmpegのインストールが必要
